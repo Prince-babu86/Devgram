@@ -7,7 +7,10 @@ import Smartdata from '../Components/Smartdata'
 import Banner from '../Components/Banner'
 import Shortcut from '../Components/Shortcut'
 
+
 const Home = () => {
+ 
+  
   return (
     <div>
       <div className='overflow-y-auto h-[88vh] '>

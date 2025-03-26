@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import "remixicon/fonts/remixicon.css";
 
 const Menubar = () => {
+  const userdata = JSON.parse(localStorage.getItem("userdata"))
   return (
     <div className='fixed bottom-[0] '>
       <menu className='flex px-4 bg-gray-50 py-2 w-full gap-[32px] items-center justify-between'>
@@ -25,12 +26,15 @@ const Menubar = () => {
         <i class="ri-accessibility-line text-2xl"></i>
         <h4 className='text-[12px]'>Changes</h4>
         </div>
-
-
-        <Link to={`/Signup`} className="mn flex items-center justify-center flex-col ">
+        {userdata ? (<Link to={`/profile`} className="mn flex items-center justify-center flex-col ">
         <i class="ri-account-circle-2-line text-2xl"></i>
         <h4 className='text-[12px]'>Me</h4>
-        </Link>
+        </Link>):(<Link to={`/signup`} className="mn flex items-center justify-center flex-col ">
+        <i class="ri-account-circle-2-line text-2xl"></i>
+        <h4 className='text-[12px]'>Me</h4>
+        </Link>)}
+
+        
       </menu>
     </div>
   )
