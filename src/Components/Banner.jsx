@@ -2,11 +2,7 @@ import React from 'react'
 
 const Banner = () => {
   const userdata = JSON.parse(localStorage.getItem("userdata"))
-  if(userdata){
-    console.log("yes")
-  }else{
-    console.log("no")
-  }
+
   
   return (
     <div className='py-2 px-4'>
