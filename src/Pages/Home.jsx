@@ -10,7 +10,7 @@ import Shortcut from '../Components/Shortcut'
 const Home = () => {
   return (
     <div>
-      <div className='overflow-y-auto h-[82vh] '>
+      <div className='overflow-y-auto h-[88vh] '>
       <Navbar/>
       <Searchbar/>
       <Path/>
