@@ -18,7 +18,7 @@ const Home = () => {
       <Banner/>
       <Shortcut/>
       </div>
-      <Menubar/>
+     
     </div>
   )
 }
