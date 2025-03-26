@@ -8,7 +8,7 @@ const Signup = () => {
         <h4>Back</h4>
         </div>
         <img className='h-screen w-full' src="https://i.pinimg.com/736x/68/83/f2/6883f23c7d1b5cddbb9e86204e78f00b.jpg" alt="" />
-        <div className="sign-up absolute h-[63vh] w-full bg-slate-100  z-[100] top-[30%] rounded-t-[35px]">
+        <div className="sign-up absolute h-[63vh] w-full bg-slate-100  z-[100] top-[34%] rounded-t-[35px]">
             <h1 className='text-3xl text-blue-500 font-semibold text-center mt-4'>Get Started</h1>
             <form action="" className='px-4'>
                 <div className="frm flex items-start justify-start flex-col gap-[5px] mb-5">
