@@ -8,8 +8,8 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       manifest: {
-        name: 'DevGram 🧑‍💻',
-        short_name: 'DevGram 🧑‍💻',
+        name: 'DevGram ',
+        short_name: 'DevGram ',
         description: 'A Vite-powered Progressive Web App',
         theme_color: '#ffffff',
         icons: [
