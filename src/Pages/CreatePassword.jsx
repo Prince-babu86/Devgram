@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Signup from "./Signup";
 
 const CreatePassword = () => {
   const [userPassword, setuserPassword] = useState([{
@@ -12,6 +13,7 @@ const CreatePassword = () => {
   const [loader, setloader] = useState(false)
   const navigate = useNavigate()
   const imageRef = useRef()
+  const userdata = JSON.parse(localStorage.getItem("userdata"))
   const handleOnChange  = (e) =>{
     setuserPassword({...userPassword , [e.target.name]:e.target.value})
   }
@@ -30,7 +32,9 @@ const CreatePassword = () => {
   }
 
   return (
-    <div className="h-screen w-full bg-[#FFCB47] overflow-hidden">
+   <>
+  
+   {userdata ? ( <div className="h-screen w-full bg-[#FFCB47] overflow-hidden">
     <div className="h-[20vh] w-full  px-4 py-4 "> 
       <div className="flex items-center gap-5">
       <i onClick={()=>{navigate("/")}} className="ri-arrow-left-line text-2xl active:scale-[1.5]"></i>
@@ -58,7 +62,8 @@ const CreatePassword = () => {
 
        
       </div>
-    </div>
+    </div>):(<Signup/>)}
+   </>
   );
 };
 
