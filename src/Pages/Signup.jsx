@@ -37,12 +37,12 @@ if(file){
 
 
   return (
-    <div className='h-screen w-full bg-slate-500 relative '>
+    <div className='h-screen w-full bg-blue-500 relative '>
         <div onClick={()=>{navigate("/")}} className="flex absolute top-4 left-3 items-center justify-center text-white">
         <i className="ri-arrow-left-wide-line text-3xl" ></i>
         <h4>Back</h4>
         </div>
-        <img className='h-screen w-full' src="https://i.pinimg.com/736x/68/83/f2/6883f23c7d1b5cddbb9e86204e78f00b.jpg" alt="" />
+        <img className='h-screen w-full'  alt="" />
         <div className="sign-up absolute h-[63vh] w-full bg-slate-100  z-[100] bottom-0 rounded-t-[35px]">
             <h1 className='text-3xl text-blue-500 font-semibold text-center mt-4'>Get Started</h1>
             <form onSubmit={handleOnSubmit} action="" className='px-4'>
