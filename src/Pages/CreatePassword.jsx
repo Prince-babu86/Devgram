@@ -78,7 +78,7 @@ const CreatePassword = () => {
               <input
                 required
                 minLength={4}
-                maxLength={16}
+                maxLength={22}
                 onChange={handleOnChange}
                 value={userPassword.username}
                 name="username"
